@@ -1,6 +1,6 @@
 # Contents
 This skeleton application involves the following areas :
-* REST Controller
+* REST controller
 * REST parameters
 
 # References
