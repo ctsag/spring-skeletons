@@ -29,3 +29,5 @@ The following rules will apply for all skeleton apps :
 * No javadoc unless we're talking about a public library or API
 
 * All IntelliJ IDEA warnings must be resolved or justifiably suppressed
+
+* Prefer simple lamdas instead of loops, and prefer method references instead of lamda expressions
