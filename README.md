@@ -18,5 +18,14 @@ The following rules will apply for all skeleton apps :
     - Getters and setters that do not require custom code
     - Any constructor that does not require custom code
     - Setting up loggers
+    - toString()
 
 * A README.md file will exist for all skeleton apps describing the areas involved and references on how the application was built
+
+* Prefer @Component instead of @Bean
+
+* No comments unless absolutely necessary
+
+* No javadoc unless we're talking about a public library or API
+
+* All IntelliJ IDEA warnings must be resolved or justifiably suppressed
