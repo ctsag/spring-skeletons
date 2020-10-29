@@ -1,7 +1,8 @@
 # Contents
 This skeleton application involves the following areas :
+
 * REST controller
-* REST parameters
+* JSON marshalling
 
 # References
 * [Spring Quickstart Guide](https://spring.io/quickstart)
