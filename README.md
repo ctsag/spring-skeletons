@@ -29,6 +29,11 @@ A list of skeleton apps for Spring Boot :
     - REST controller unit test
     - Application context exploration
 
+* restful-hateoas-service
+    - HATEOAS representation model class
+    - REST controller
+    - Jackson
+
 # Rules
 The following rules will apply for all skeleton apps :
 
