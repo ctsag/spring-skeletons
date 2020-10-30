@@ -23,7 +23,11 @@ A list of skeleton apps for Spring Boot :
     - JSON marshalling
 
 * auto-configure-context-explorer
-    - 
+    - Actuator
+    - REST controller
+    - REST controller integration test
+    - REST controller unit test
+    - Application context exploration
 
 # Rules
 The following rules will apply for all skeleton apps :
