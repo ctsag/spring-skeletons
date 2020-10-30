@@ -34,6 +34,12 @@ A list of skeleton apps for Spring Boot :
     - REST controller
     - Jackson
 
+* circuit-breaker
+    - Circuit Breaker pattern
+    - Netflix Hystrix
+    - REST controller
+    - REST template
+
 # Rules
 The following rules will apply for all skeleton apps :
 

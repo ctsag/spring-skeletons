@@ -14,7 +14,7 @@ public class QuoteServiceConsumer {
   private final RestTemplate restTemplate;
 
   public QuoteServiceConsumer() {
-    restTemplate = new RestTemplateBuilder().build();
+    this.restTemplate = new RestTemplateBuilder().build();
     consume();
   }
 
