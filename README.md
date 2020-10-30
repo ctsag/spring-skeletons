@@ -5,6 +5,7 @@ A list of skeleton apps for Spring Boot :
     - Data JPA entity
     - Data JPA CRUD repository interface
     - Data JPA repository interface overrides
+    - H2 database
 
 * rest-consumer
     - REST Template
@@ -15,10 +16,14 @@ A list of skeleton apps for Spring Boot :
     - Data JPA entity
     - Data JPA PagingAndSorting repository interface
     - Data JPA repository interface overrides
+    - H2 database
 
 * restful-service
     - REST controller
-    - JSON marshalling    
+    - JSON marshalling
+
+* auto-configure-context-explorer
+    - 
 
 # Rules
 The following rules will apply for all skeleton apps :
