@@ -20,7 +20,11 @@ A list of skeleton apps for Spring Boot :
 
 * restful-service
     - REST controller
+    - REST docs
     - JSON marshalling
+    - JUnit
+    - Asciidoctor
+    - CORS
 
 * auto-configure-context-explorer
     - Actuator
