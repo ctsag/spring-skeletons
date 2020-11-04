@@ -44,6 +44,11 @@ A list of skeleton apps for Spring Boot :
     - REST controller
     - REST template
 
+* secure-thymeleaf
+    - Thymeleaf
+    - Thymeleaf Extras Security
+    - Spring Security
+
 # Rules
 The following rules will apply for all skeleton apps :
 
