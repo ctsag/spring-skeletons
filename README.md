@@ -48,6 +48,7 @@ A list of skeleton apps for Spring Boot :
     - Thymeleaf
     - Thymeleaf Extras Security
     - Spring Security
+    - Spring DevTools static content reload
 
 # Rules
 The following rules will apply for all skeleton apps :
