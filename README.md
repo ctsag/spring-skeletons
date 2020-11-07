@@ -29,8 +29,8 @@ A list of skeleton apps for Spring Boot :
 * auto-configure-context-explorer
     - Actuator
     - REST controller
-    - REST controller integration test
-    - REST controller unit test
+    - REST tests
+    - JUnit
     - Application context exploration
 
 * restful-hateoas-service
