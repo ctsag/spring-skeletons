@@ -50,6 +50,12 @@ A list of skeleton apps for Spring Boot :
     - Spring Security
     - Spring DevTools static content reload
 
+* web-layer-tests
+    - REST controller
+    - REST tests
+    - JUnit
+    - Mockito
+
 # Rules
 The following rules will apply for all skeleton apps :
 
