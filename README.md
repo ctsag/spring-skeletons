@@ -70,6 +70,22 @@ A list of skeleton apps for Spring Boot :
     - Docker
     - PostgreSQL
 
+* data-tests
+    - Data JPA
+    - Data JPA derived queries
+    - Data JPA paging and sorting
+    - Data JPA entity unit testing
+    - Data JPA repository unit testing
+    - Data JPA custom queries
+    - Data JPA transactions
+
+* data-tests-mongo
+    - Data MongoDB
+    - Data MongoDB derived queries
+    - Data MongoDB paging and sorting
+    - Data MongoDB entity unit testing
+    - Data MongoDB repository unit testing
+
 # Rules
 The following rules will apply for all skeleton apps :
 
