@@ -27,7 +27,7 @@ public class FlightRepositoryTest {
   }
 
   @Test
-  public void shouldPerformCRUDOperatoins() {
+  public void shouldPerformCRUDOperations() {
     Flight flight = new Flight();
 
     flight.setOrigin("London");
