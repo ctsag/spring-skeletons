@@ -1,12 +1,35 @@
 # Contents
 This skeleton application involves the following areas :
 
-* REST controller
-* REST docs
-* JSON marshalling
-* JUnit
+## Spring Projects
 * Asciidoctor
-* CORS
+* Lombok
+    - @Getter
+    - @RequiredArgsConstructor
+* Spring Boot
+    - @Autowired
+* Spring Boot Web
+    - @CrossOrigin
+    - @GetMapping
+    - @RequestParam
+    - @RestController
+* Spring Boot Testing
+    - @WebMvcTest
+    - MockMvc
+    - MockMvcRequestBuilders
+    - MockMvcResultHandlers
+* Spring REST Docs
+    - MockMvcRestDocumentation
+    - PayloadDocumentation
+
+## Concepts
+* Asciidoctor
+* Spring Boot Web
+    - CORS
+    - JSON marshalling
+    - REST controller
+* Spring REST Docs
+    - Documentation generating tests
 
 # References
 * [Spring Quickstart Guide](https://spring.io/quickstart)

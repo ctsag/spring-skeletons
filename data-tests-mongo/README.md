@@ -6,11 +6,34 @@ on a relational H2 database to a directory database on MongoDB.
 # Contents
 This skeleton application involves the following areas :
 
-* Data MongoDB
-* Data MongoDB derived queries
-* Data MongoDB paging and sorting
-* Data MongoDB entity unit testing
-* Data MongoDB repository unit testing
+## Spring Projects
+* AssertJ
+    - Assertions
+* MongoDB
+* Lombok
+    - @Getter
+    - @Setter
+    - @ToString
+* Spring Boot
+    - @Autowired
+* Spring Data JPA
+    - Page
+    - Pageable
+    - PageRequest
+    - PagingAndSortingRepository
+    - Sort
+* Spring Boot Testing
+    - @SpringBootTest
+    - @DataMongoTest
+
+## Concepts
+* AssertJ
+* Spring Data JPA
+    - Derived queries
+    - Paging
+    - Sorting
+    - User defined methods
+* Spring Data Mongo
 
 # References
 * [Spring Framework: Overview of Spring Data](https://www.pluralsight.com/courses/spring-framework-overview-spring-data)

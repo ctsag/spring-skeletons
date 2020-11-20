@@ -1,10 +1,38 @@
 # Contents
 This skeleton application involves the following areas :
 
-* Thymeleaf
-* Thymeleaf Extras Security
+## Spring Projects
+* Spring Boot
+    - @Bean
+    - @Configuration
+    - @Controller
+    - Model
+* Spring Boot DevTools
+* Spring Boot Web
+    - @GetMapping
+    - @RequestParam
+    - ViewControllerRegistry
+    - WebMvcConfigurer
 * Spring Security
-* Spring DevTools static content reload
+    - @EnableWebSecurity
+    - HttpSecurity
+    - InMemoryUserDetailsManager
+    - PasswordEncoder
+    - PasswordEncoderFactories
+    - User
+    - UserDetails
+    - UserDetailsService
+    - WebSecurityConfigurerAdapter
+* Thymeleaf
+
+## Concepts
+* Spring Boot DevTools
+    - Static content reload
+* Spring Security
+    - Hardcoded username/password authentication
+* Thymeleaf
+    - Template variables
+    - Thymeleaf extras : security
 
 # References
 * [Securing a Web Application][https://spring.io/guides/gs/securing-web/]
