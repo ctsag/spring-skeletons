@@ -15,7 +15,7 @@ import lombok.ToString;
 public class Application {
 
   @Id @GeneratedValue(strategy = GenerationType.AUTO)
-  @Getter private Integer id;
+  @Getter @Setter private Integer id;
 
   @Column
   @Getter @Setter private String name;

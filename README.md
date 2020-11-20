@@ -62,6 +62,19 @@
     - data-tests-mongo
 * PostgreSQL
     - data-jpa-postgres
+* REST Assured
+    - ContentType
+        - restful-hateoas-service
+    - RestAssured
+        - restful-hateoas-service
+    - RequestSpecBuilder
+        - restful-hateoas-service
+    - RequestSpecification
+        - restful-hateoas-service
+    - ResponseSpecBuilder
+        - restful-hateoas-service
+    - ResponseSpecification
+        - restful-hateoas-service
 * Spring Boot
     - @Autowired
         - auto-configure-context-explorer
@@ -75,6 +88,7 @@
         - web-layer-tests
     - @Bean
         - data-jpa-postgres
+        - data-rest-microservices/applications
         - secure-thymeleaf
     - @Component
         - auto-configure-context-explorer
@@ -85,6 +99,7 @@
         - rest-consumer
     - @Configuration
         - data-jpa-postgres
+        - data-rest-microservices/applications
         - secure-thymeleaf
     - @Controller
         - secure-thymeleaf
@@ -127,8 +142,10 @@
         - web-layer-tests
     - @SpringBootTest
         - auto-configure-context-explorer
+        - data-rest-microservices/applications
         - data-tests
         - data-tests-mongo
+        - restful-hateoas-service
         - web-layer-tests
     - @WebMvcTest
         - auto-configure-context-explorer
@@ -152,9 +169,12 @@
         - web-layer-tests
     - TestRestTemplate
         - auto-configure-context-explorer
+        - data-rest-microservices/applications
         - web-layer-tests
     - WebEnvironment
         - auto-configure-context-explorer
+        - data-rest-microservices/applications
+        - restful-hateoas-service
         - web-layer-tests
 * Spring Boot Web
     - @CrossOrigin
@@ -203,14 +223,21 @@
     - @PutMapping
         - data-jpa-postgres
     - HttpEntity
+        - data-rest-microservices/applications
         - restful-hateoas-service
+    - HttpMethod
+        - data-rest-microservices/applications
     - HttpStatus
+        - data-rest-microservices/applications
         - data-jpa-postgres
         - restful-hateoas-service
+    - HttpType
+        - data-rest-microservices/applications
     - JsonNode
         - data-rest-microservices/applications
     - MediaType
         - auto-configure-context-explorer
+        - data-rest-microservices/applications
     - ObjectMapper
         - data-rest-microservices/applications
     - RequestMethod
@@ -366,7 +393,20 @@
         - secure-thymeleaf
     - WebSecurityConfigurerAdapter
         - secure-thymeleaf
-Thymeleaf
+* SpringFox
+    - @EnableSwagger2
+        - data-rest-microservices/applications
+    - Docket
+        - data-rest-microservices/applications
+    - DocumentationType
+        - data-rest-microservices/applications
+    - PathSelectors
+        - data-rest-microservices/applications
+    - RequestHandlerSelectors
+        - data-rest-microservices/applications
+    - ResponseBuilder  
+        - data-rest-microservices/applications
+* Thymeleaf
     - secure-thymeleaf
 
 ## Concepts
@@ -390,6 +430,17 @@ Thymeleaf
     - data-tests-mongo
 * PostgreSQL
     - data-jpa-postgres
+* REST Assured
+    - Logging facilities
+        - restful-hateoas-service
+    - Parameterized tests
+        - restful-hateoas-service
+    - Request specification
+        - restful-hateoas-service
+    - Response specification
+        - restful-hateoas-service
+    - Response deserialization
+        - restful-hateoas-service
 * Spring Boot
     - Application context events
         - data-rest-microservices/applications
@@ -416,12 +467,16 @@ Thymeleaf
         - secure-thymeleaf
 * Spring Boot Testing
     - HTTP server testing
+        - data-rest-microservices/applications
+        - restful-hateoas-service
         - web-layer-tests
     - JPA repository unit testing
         - data-tests
     - Mock beans
         - web-layer-tests
     - REST controller testing
+        - data-rest-microservices/applications
+        - restful-hateoas-service
         - web-layer-tests
     - Web context testing
         - web-layer-tests
@@ -505,6 +560,9 @@ Thymeleaf
 * Spring Security
     - Hardcoded username/password authentication
         - secure-thymeleaf
+* SpringFox
+    - Docket configuration
+        - data-rest-microservices/applications
 * Thymeleaf
     - Template variables
         - secure-thymeleaf

@@ -10,14 +10,25 @@ This skeleton application involves the following areas :
     - @ToString
 * Spring Boot
     - @Autowired
+    - @Bean
     - @Component
+    - @Configuration
     - ApplicationListener
     - ContextRefreshedEvent
+* Spring Boot Testing
+    - @SpringBootTest
+    - TestRestTemplate
+    - WebEnvironment
 * Spring Boot Web
     - @PathVariable
     - @RequestMapping
     - @ResponseBody
+    - HttpEntity
+    - HttpMethod
+    - HttpStatus
+    - HttpType
     - JsonNode
+    - MediaType
     - ObjectMapper
     - RequestMethod
     - ResponseEntity
@@ -37,6 +48,13 @@ This skeleton application involves the following areas :
     - CollectionModel
     - EntityModel
     - WebMvcLinkBuilder
+* SpringFox
+    - @EnableSwagger2
+    - Docket
+    - DocumentationType
+    - PathSelectors
+    - RequestHandlerSelectors
+    - ResponseBuilder    
 
 ## Concepts
 * Microservices
@@ -44,6 +62,9 @@ This skeleton application involves the following areas :
     - Synchronous Lookup
 * Spring Boot
     - Application context events
+* Spring Boot Testing
+    - HTTP server testing
+    - REST controller testing
 * Spring Boot Web
     - REST Templaet
 * Spring Data REST
@@ -51,6 +72,8 @@ This skeleton application involves the following areas :
     - URI customization
 * Spring HATEOAS
     - Response construction
+* SpringFox
+    - Docket configuration
 
 ## Properties
 server.port
