@@ -19,6 +19,9 @@
 
   <properties>
     <java.version>1.8</java.version>
+    <cucumber.version>6.9.0</cucumber.version>
+    <selenium.version>3.141.59</selenium.version>
+    <cucumberReporting.version>4.11.2</cucumberReporting.version>
   </properties>
 
   <dependencies>
@@ -56,6 +59,32 @@
     </dependency>
 
     <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>${cucumber.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-spring</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>${selenium.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-test</artifactId>
       <scope>test</scope>
@@ -79,6 +108,43 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>net.masterthought</groupId>
+        <artifactId>maven-cucumber-reporting</artifactId>
+        <version>${cucumberReporting.version}</version>
+        <executions>
+          <execution>
+            <id>execution</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <projectName>cucumber-jvm-example</projectName>
+              <!-- optional, per documentation set this to "true" to bypass generation
+                of Cucumber Reports entirely, defaults to false if not specified -->
+              <skip>false</skip>
+              <!-- output directory for the generated report -->
+              <outputDirectory>${project.build.directory}</outputDirectory>
+              <!-- optional, defaults to outputDirectory if not specified -->
+              <inputDirectory>${project.build.directory}</inputDirectory>
+              <jsonFiles>
+                <!-- supports wildcard or name pattern -->
+                <param>**/*.json</param>
+              </jsonFiles>
+              <!-- optional, defaults to outputDirectory if not specified -->
+              <classificationDirectory>${project.build.directory}</classificationDirectory>
+              <classificationFiles>
+                <!-- supports wildcard or name pattern -->
+                <param>sample.properties</param>
+                <param>other.properties</param>
+              </classificationFiles>
+              <!-- optional, set true to fail build on test failures -->
+              <checkBuildResult>false</checkBuildResult>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

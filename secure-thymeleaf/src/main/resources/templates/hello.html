@@ -9,9 +9,9 @@
 </head>
 
 <body>
-  <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+  <h1 name="title" th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
   <p th:text="'Hellooooo, ' + ${name} + '!'"/>
-  <form th:action="@{/logout}" method="post">
+  <form name="logout" th:action="@{/logout}" method="post">
     <input type="submit" value="Sign Out">
   </form>
 

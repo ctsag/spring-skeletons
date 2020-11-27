@@ -2,6 +2,24 @@
 This skeleton application involves the following areas :
 
 ## Spring Projects
+* Cucumber
+    - @After
+    - @Before
+    - @CucumberContextConfiguration
+    - @CucumberOptions
+    - @Given
+    - @Then
+    - @When
+    - DataTable
+    - Feature
+    - Scenario
+    - Given
+    - Then
+    - When
+* Selenium
+    - By
+    - ChromeDriver
+    - WebDriver
 * Spring Boot
     - @Bean
     - @Configuration
@@ -26,6 +44,22 @@ This skeleton application involves the following areas :
 * Thymeleaf
 
 ## Concepts
+* BDD with Cucumber
+    - Data tables
+    - Features
+    - Gherkin
+    - Hooks
+    - Scenarios vs scenario outlines
+    - Steps and step definition
+    - Repeatable annotations
+    - Parameterized tests
+    - Report generation
+    - Spring Boot integration
+    - Test runners
+* Web UI Testing with Selenium
+    - ChromeDriver as the WebDriver component
+    - Finding elements
+    - Manipulating elements
 * Spring Boot DevTools
     - Static content reload
 * Spring Security
@@ -35,5 +69,6 @@ This skeleton application involves the following areas :
     - Thymeleaf extras : security
 
 # References
-* [Securing a Web Application][https://spring.io/guides/gs/securing-web/]
-* [Serving Web Content with Spring MVC][https://spring.io/guides/gs/serving-web-content/]
+* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Cucumber with Java](https://testautomationu.applitools.com/cucumber-java-tutorial/)

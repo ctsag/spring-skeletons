@@ -6,6 +6,37 @@
 * AssertJ
     - Assertions
         - data-tests
+* Cucumber
+    - @After
+        - secure-thymeleaf
+    - @Before
+        - secure-thymeleaf
+    - @CucumberContextConfiguration
+        - secure-thymeleaf
+    - @CucumberOptions
+        - secure-thymeleaf
+    - @Given
+        - secure-thymeleaf
+    - @Then
+        - secure-thymeleaf
+    - @When
+        - secure-thymeleaf
+    - DataTable
+        - secure-thymeleaf
+    - Examples
+        - secure-thymeleaf
+    - Feature
+        - secure-thymeleaf
+    - Given
+        - secure-thymeleaf
+    - Scenario
+        - secure-thymeleaf
+    - Scenario Outline
+        - secure-thymeleaf
+    - Then
+        - secure-thymeleaf
+    - When
+        - secure-thymeleaf
 * Lombok
     - @Getter
         - data-jpa-basic-access
@@ -75,6 +106,13 @@
         - restful-hateoas-service
     - ResponseSpecification
         - restful-hateoas-service
+* Selenium
+    - By
+        - secure-thymeleaf
+    - ChromeDriver
+        - secure-thymeleaf
+    - WebDriver
+        - secure-thymeleaf
 * Spring Boot
     - @Autowired
         - auto-configure-context-explorer
@@ -415,6 +453,29 @@
 * AssertJ
     - data-tests
     - data-tests-mongo
+* BDD with Cucumber
+    - Data tables
+        - secure-thymeleaf
+    - Features
+        - secure-thymeleaf
+    - Gherkin
+        - secure-thymeleaf
+    - Hooks
+        - secure-thymeleaf
+    - Scenarios vs scenario outlines
+        - secure-thymeleaf
+    - Steps and step definition
+        - secure-thymeleaf
+    - Repeatable annotations
+        - secure-thymeleaf
+    - Parameterized tests
+        - secure-thymeleaf
+    - Report generation
+        - secure-thymeleaf
+    - Spring Boot integration
+        - secure-thymeleaf
+    - Test runners
+        - secure-thymeleaf
 * Docker
     - data-jpa-postgres
 * Microservices
@@ -568,7 +629,6 @@
         - secure-thymeleaf
     - Thymeleaf extras : security
         - secure-thymeleaf
-
 
 ## Properties
 * server.port
