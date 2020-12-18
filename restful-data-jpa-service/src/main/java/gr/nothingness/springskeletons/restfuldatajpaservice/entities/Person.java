@@ -1,4 +1,4 @@
-package gr.nothingness.springskeletons.restfuldatajpaservice;
+package gr.nothingness.springskeletons.restfuldatajpaservice.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
