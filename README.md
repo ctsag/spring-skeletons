@@ -588,10 +588,13 @@
     - Documentation generating tests
         - restful-service
 * Spring Security
-    - In-memory authentication provider
+    - Basic HTTP authentication
+        - restful-data-jpa-service
         - secure-thymeleaf
     - Database authentication provider
         - restful-data-jpa-service
+    - In-memory authentication provider
+        - secure-thymeleaf
     - Security scheme customization
         - restful-data-jpa-service
     - Password encryption

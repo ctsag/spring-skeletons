@@ -44,6 +44,7 @@ This skeleton application involves the following areas :
     - User defined methods
     - UUIDs as keys
 * Spring Security
+    - Basic HTTP authentication
     - Database authentication provider
     - Security scheme customization
     - Password encryption

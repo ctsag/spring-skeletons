@@ -29,6 +29,7 @@ This skeleton application involves the following areas :
 * Spring Boot DevTools
     - Static content reload
 * Spring Security
+    - Basic HTTP authentication
     - In-memory authentication provider
 * Thymeleaf
     - Template variables
