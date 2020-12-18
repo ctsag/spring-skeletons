@@ -30,6 +30,7 @@
         - data-jpa-basic-access
         - data-jpa-postgres
         - rest-consumer
+        - restful-data-jpa-service
     - @RequiredArgsConstructor
         - circuit-breaker
         - data-rest-microservices/applications
@@ -89,6 +90,7 @@
     - @Bean
         - data-jpa-postgres
         - data-rest-microservices/applications
+        - restful-data-jpa-service
         - secure-thymeleaf
     - @Component
         - auto-configure-context-explorer
@@ -100,6 +102,7 @@
     - @Configuration
         - data-jpa-postgres
         - data-rest-microservices/applications
+        - restful-data-jpa-service
         - secure-thymeleaf
     - @Controller
         - secure-thymeleaf
@@ -123,6 +126,8 @@
         - data-rest-microservices/tickets
     - Model
         - secure-thymeleaf
+    - SmartInitializingSingleton
+        - restful-data-jpa-service
 * Spring Boot Actuator
     - auto-configure-context-explorer
 * Spring Boot DevTools
@@ -266,6 +271,7 @@
         - data-rest-microservices/applications
         - data-rest-microservices/tickets
         - data-rest-microservices/users
+        - restful-data-jpa-service
     - @Entity
         - data-jpa-basic-access
         - data-jpa-postgres
@@ -298,20 +304,29 @@
         - data-jpa-postgres
     - @ManyToMany
         - data-jpa-postgres
+    - @ManyToOne
+        - restful-data-jpa-service
+    - @OneToMany
+        - restful-data-jpa-service
     - @Transactional
         - data-tests
     - @Transient
         - data-rest-microservices/applications
     - @Type
         - data-jpa-postgres
+    - CascadeType
+        - restful-data-jpa-service
     - CrudRepository
         - data-jpa-basic-access
+        - restful-data-jpa-service
     - DataSource
         - data-jpa-postgres
     - DataSourceBuilder
         - data-jpa-postgres
     - EntityManager
         - data-tests
+    - FetchType
+        - restful-data-jpa-service
     - GenerationType
         - data-jpa-basic-access
         - data-jpa-postgres
@@ -345,6 +360,8 @@
         - data-tests-mongo
     - TypedQuery
         - data-tests
+    - UUID
+        - restful-data-jpa-service
 * Spring Data Mongo
     - data-tests-mongo
 * Spring Data REST
@@ -383,6 +400,7 @@
         - secure-thymeleaf
     - PasswordEncoder
         - secure-thymeleaf
+        - restful-data-jpa-service
     - PasswordEncoderFactories
         - secure-thymeleaf
     - User
@@ -456,6 +474,8 @@
         - data-jpa-postgres
     - Executable JAR output
         - data-jpa-postgres
+    - Initializing actions
+        - restful-data-jpa-service
     - Object property copying
         - data-jpa-postgres
     - Spring profiles
@@ -511,6 +531,8 @@
     - Built in methods
         - data-jpa-basic-access
         - data-jpa-postgres
+    - Copy constructor
+        - restful-data-jpa-service
     - Custom queries
         - data-tests
     - Data source bean
@@ -520,12 +542,17 @@
         - data-tests-mongo
     - Explicit column/table names
         - data-jpa-postgres
+        - restful-data-jpa-service
     - Many to many entity relation
         - data-jpa-postgres
+    - One to many entity relation
+        - restful-data-jpa-service
     - Paging
         - data-rest-microservices/tickets
         - data-tests
         - data-tests-mongo
+    - Relational addition convenience method
+        - restful-data-jpa-service
     - Repositories
         - data-jpa-basic-access
     - Sorting
@@ -537,6 +564,9 @@
         - data-jpa-basic-access
         - data-tests
         - data-tests-mongo
+        - restful-data-jpa-service
+    - UUIDs as keys
+        - restful-data-jpa-service
 * Spring Data Mongo
         - data-tests-mongo
 * Spring Data REST
@@ -558,8 +588,17 @@
     - Documentation generating tests
         - restful-service
 * Spring Security
-    - Hardcoded username/password authentication
+    - Basic HTTP authentication
+        - restful-data-jpa-service
         - secure-thymeleaf
+    - Database authentication provider
+        - restful-data-jpa-service
+    - In-memory authentication provider
+        - secure-thymeleaf
+    - Security scheme customization
+        - restful-data-jpa-service
+    - Password encryption
+        - restful-data-jpa-service
 * SpringFox
     - Docket configuration
         - data-rest-microservices/applications
