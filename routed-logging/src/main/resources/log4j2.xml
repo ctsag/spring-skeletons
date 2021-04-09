@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+
+  <Appenders>
+
+    <Routing name="RoutingAppender">
+      <Routes pattern="${ctx:route}">
+
+        <Route key="Group1">
+          <File name="Rolling-Group1" fileName="logs/group1.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"/>
+          </File>
+        </Route>
+
+        <Route key="Group2">
+          <File name="Rolling-Group2" fileName="logs/group2.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"/>
+          </File>
+        </Route>
+
+        <Route key="Group3">
+          <Console name="Console-NoGroup" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"/>
+          </Console>
+        </Route>
+
+      </Routes>
+    </Routing>
+
+  </Appenders>
+
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="RoutingAppender"/>
+    </Root>
+  </Loggers>
+
+</Configuration>
